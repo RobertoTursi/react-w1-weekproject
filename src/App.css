@@ -107,3 +107,45 @@ footer {
 .img-fluid{
   height: 100%;
 }
+
+.modale{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 40%;
+  position: absolute;
+  z-index: 1;
+  background-color: #302c2cf0;
+  left: 30%;
+  padding:15px
+}
+
+h1{
+  font-size: 3.5em;
+}
+
+.trama{
+  font-size: 1.8em;
+  margin:0
+}
+
+.modalImg{
+  width:45%
+}
+
+.secondModalDiv{
+  display: flex;
+}
+
+.ghostModale{
+  display: none;
+}
+
+.modalRightSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}

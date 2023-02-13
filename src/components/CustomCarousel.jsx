@@ -9,7 +9,8 @@ class Carousel extends Component{
       loading: true,
       error: false,
       errorMessage: "",
-      movieId: null
+      movieId: null,
+      
     }
 
     movieFetch = async () => {
@@ -54,9 +55,12 @@ class Carousel extends Component{
     }
 
     showFilm = (e) => {
+
       
       this.setState({movieId: e})
+      console.log(this.state.movieId)
       
+
     
       
     }
