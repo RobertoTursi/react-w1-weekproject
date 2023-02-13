@@ -54,7 +54,10 @@ class Carousel extends Component{
     }
 
     showFilm = (e) => {
+      
       this.setState({movieId: e})
+      
+    
       
     }
 
@@ -65,8 +68,8 @@ class Carousel extends Component{
             
             {this.state.error && <Alert variant="danger">{this.state.errorMessage}</Alert>}
             {this.state.loading && <div className="text-center"><Spinner animation="border" variant="success" /></div >}
-
-            {this.state.movieId && <CustomModal film= {this.state.movieId}/>}
+            {this.state.movieId && <CustomModal film= {this.state.movieId} />}
+            
 
             <h4>La saga di {this.props.movie}</h4>
             {/* <div
@@ -77,13 +80,19 @@ class Carousel extends Component{
           </div> */}
             <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4 no-gutters text-center">
 
-                {this.state.array0fMovies && this.state.array0fMovies.Search.map(movie => 
+                
+
+                 {this.state.array0fMovies && this.state.array0fMovies.Search.map(movie => 
                 <div onClick={(e) => this.showFilm(movie.imdbID)} className="col mb-2 px-1" key={movie.imdbID}>
                   <img className="img-fluid" src={movie.Poster} alt="" />
-                </div>)}
+                </div>)} 
               
+
+              
+
             </div>
          </>
         )
     }
-} export default Carousel
+  }
+ export default Carousel

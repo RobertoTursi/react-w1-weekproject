@@ -16,10 +16,11 @@ function App() {
       <CustomCarousel movie= "Lord of Rings"/>
       <CustomCarousel movie= "Batman"/>
       <CustomFooter />
-    </div>
-    </div>
-    </>
+      </div>
+      </div>
+      </>
   );
+  
 }
 
 export default App;

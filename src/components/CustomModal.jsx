@@ -36,19 +36,20 @@ class CustomModal extends Component {
         return (
             <>
 
+
 {/* {this.state.array0fMovies && this.state.array0fMovies.Search.map(movie => 
                 <div onClick={(e) => this.showFilm(movie.imdbID)} className="col mb-2 px-1" key={movie.imdbID}>
                   <img className="img-fluid" src={movie.Poster} alt="" />
                 </div>)} */}
                 
-                {this.state.singleMovie && console.log(this.state.singleMovie, "questo")}
+                {this.state.singleMovie && console.log(this.state.singleMovie.Title, "questo")}
                 
-                {this.state.singleMovie && this.state.singleMovie.map(movie =>
-               <div className="modal">
-                    <div>
-                        <h1>{movie.Title}</h1>
-                    </div>
-               </div>)}
+                 {this.state.singleMovie && 
+                    
+                        <h1>{this.state.singleMovie.Title}</h1>
+                    
+               } 
+               
             </>
             
         )
