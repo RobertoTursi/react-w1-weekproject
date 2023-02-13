@@ -51,7 +51,7 @@ class CustomModal extends Component {
                 <div onClick={(e) => this.showFilm(movie.imdbID)} className="col mb-2 px-1" key={movie.imdbID}>
                   <img className="img-fluid" src={movie.Poster} alt="" />
                 </div>)} */}
-                {console.log(this.props.selected)}
+                
                 {console.log(this.state.selected)}
                 {this.state.singleMovie && console.log(this.state.singleMovie.Title, "questo")}
                 
