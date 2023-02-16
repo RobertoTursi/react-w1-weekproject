@@ -24,7 +24,7 @@ class CustomModal extends Component {
         if(response.ok) {
             const data = await response.json()
             console.log(data, "data")
-            console.log(this.state.selected, "chittimorot")
+            
             this.setState(
                 {
                     selected: false,
